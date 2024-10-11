@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الطائر القافز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>مرحبا بكم في لعبة الطائر القافز!</h1>
+        <button id="start-button" onclick="startGame()">ابدأ اللعب</button>
+        <p>اضغط على الشاشة للقفز.</p>
+    </div>
+    <div id="game-area">
+        <div id="bird"></div>
+        <div id="column"></div>
+        <div id="score">النقاط: 0</div>
+        <div id="high-score">النقاط العليا: 0</div>
+        <div id="game-over" style="display: none;">
+            <h2>انتهت اللعبة!</h2>
+            <p id="final-score"></p>
+            <button onclick="resetGame()">إعادة المحاولة</button>
+        </div>
+    </div>
+    <audio id="background-music" src="background-music.mp3" loop></audio>
+    <audio id="jump-sound" src="jump-sound.mp3"></audio>
+    <audio id="hit-sound" src="hit-sound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
